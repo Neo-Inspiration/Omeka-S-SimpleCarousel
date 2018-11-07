@@ -1,0 +1,43 @@
+<div>
+	<?php
+		$this->headLink()->appendStylesheet($this->assetUrl('css/carousel.css', 'SimpleCarousel'));
+		$this->headScript()->appendFile($this->assetUrl('js/siema.min.js', 'SimpleCarousel'));
+		$caret = sprintf('<img class="caret" id="left" src="%s">', $this->assetUrl('caret.png', 'SimpleCarousel'));
+		$caret_r = sprintf('<img class="caret" id="right" src="%s">', $this->assetUrl('caret.png', 'SimpleCarousel'));
+	?>
+
+	<div class="siema">
+	<?php
+		foreach ($urls as $url) {
+			$html = sprintf('<div><img class="siema-img" src="%s"></div>', $url);
+			echo $html;
+		}
+	?>
+	</div>
+
+	<style>
+		.siema-img {
+			height: <?php echo $height ?>;
+		}
+	</style>
+	<script>
+	$(document).ready(function() {
+		let siema = new Siema({
+			selector: '.siema',
+			easing: 'ease-out',
+			duration: <?php echo $duration ?>,
+			perPage: <?php echo $perPage ?>,
+			loop: <?php echo $loop ?>,
+			draggable: <?php echo $draggable ?>
+		});
+
+		let caret = '<?php echo $caret;?>';
+		let caret_r = '<?php echo $caret_r;?>';
+		$('.siema').append(caret);
+		$('.siema').append(caret_r);
+
+		$('.caret#left').click(function () {siema.prev()});
+		$('.caret#right').click(function () {siema.next()});
+	});
+	</script>
+</div>
