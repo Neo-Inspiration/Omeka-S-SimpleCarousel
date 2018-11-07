@@ -1,5 +1,6 @@
 # Simple Carousel (module for Omeka S)
 [Simple Carousel] is a module for [Omeka S]. This module provides carousel block form.
+
 You can simply place carousel blocks composed of site resource images on a page.
 
 ## TODO

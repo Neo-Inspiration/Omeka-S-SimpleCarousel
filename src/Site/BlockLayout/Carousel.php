@@ -58,7 +58,6 @@ class Carousel extends AbstractBlockLayout
 		$html .= '<a href="#" class="collapse" aria-label="collapse"><h4>' . $view->translate('Options'). '</h4></a>';
 		$html .= '<div class="collapsible" style="padding-top:6px;">';
 		$html .= $view->formCollection($form);
-		// $html .= $view->blockCarouselDuration($block);
         $html .= '</div>';
 		return $html;
     }

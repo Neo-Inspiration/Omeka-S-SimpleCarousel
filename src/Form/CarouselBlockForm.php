@@ -12,7 +12,7 @@ class CarouselBlockForm extends Form
 			'name' => 'o:block[__blockIndex__][o:data][height]',
             'type' => Element\Text::class,
             'options' => [
-                'label' => 'Carousel height', // @translate
+                'label' => 'Carousel height',
                 'info' => 'Please enter a number with CSS units.',
             ],
 		]);
@@ -21,7 +21,7 @@ class CarouselBlockForm extends Form
 			'name' => 'o:block[__blockIndex__][o:data][duration]',
             'type' => Element\Number::class,
             'options' => [
-				'label' => 'Duration (milliseconds)', // @translate
+				'label' => 'Duration (milliseconds)',
 				'info' => 'Slide transition duration in milliseconds.'
             ],
 		]);
@@ -30,7 +30,7 @@ class CarouselBlockForm extends Form
 			'name' => 'o:block[__blockIndex__][o:data][perPage]',
             'type' => Element\Number::class,
             'options' => [
-				'label' => 'Image Per page', // @translate
+				'label' => 'Image Per page',
 				'info' => 'The number of slides to be shown.'
 			],
 			'attributes' => [
@@ -43,7 +43,7 @@ class CarouselBlockForm extends Form
 			'name' => 'o:block[__blockIndex__][o:data][loop]',
 			'type' => Element\Checkbox::class,
             'options' => [
-				'label' => 'Loop', // @translate
+				'label' => 'Loop',
 			]
 		]);
 
@@ -51,7 +51,7 @@ class CarouselBlockForm extends Form
 			'name' => 'o:block[__blockIndex__][o:data][draggable]',
 			'type' => Element\Checkbox::class,
             'options' => [
-				'label' => 'Draggable', // @translate
+				'label' => 'Draggable',
 			]
 		]);
 	}
