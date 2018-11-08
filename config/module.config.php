@@ -24,6 +24,7 @@ return [
             'perPage' => 1,
             'loop' => true,
             'draggable' => true,
+            'title' => ''
         ]
     ]
 ];

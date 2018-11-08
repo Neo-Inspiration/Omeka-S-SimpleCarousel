@@ -2,6 +2,13 @@
 	<?php
 		$this->headLink()->appendStylesheet($this->assetUrl('css/carousel.css', 'SimpleCarousel'));
 		$this->headScript()->appendFile($this->assetUrl('js/siema.min.js', 'SimpleCarousel'));
+		
+		if ($title !== false && $title !== "") {
+			$title = sprintf('<p id="carousel-title">%s</p>', $title);
+		} else {
+			$title = false;
+		}
+
 		$caret = sprintf('<img class="caret" id="left" src="%s">', $this->assetUrl('caret.png', 'SimpleCarousel'));
 		$caret_r = sprintf('<img class="caret" id="right" src="%s">', $this->assetUrl('caret.png', 'SimpleCarousel'));
 	?>
@@ -33,6 +40,11 @@
 
 		let caret = '<?php echo $caret;?>';
 		let caret_r = '<?php echo $caret_r;?>';
+
+	<?php if ($title !== false): ?>
+		$('.siema').append('<?php echo $title;?>');
+	<?php endif ?>
+
 		$('.siema').append(caret);
 		$('.siema').append(caret_r);
 

@@ -89,6 +89,7 @@ class Carousel extends AbstractBlockLayout
 			'perPage' => $block->dataValue('perPage'),
 			'loop' => $block->dataValue('loop'),
 			'draggable' => $block->dataValue('draggable'),
+			'title' => $block->dataValue('title'),
 			'urls' => $urls,
 		]);
 	}

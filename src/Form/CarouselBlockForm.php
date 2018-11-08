@@ -54,5 +54,13 @@ class CarouselBlockForm extends Form
 				'label' => 'Draggable',
 			]
 		]);
+
+		$this->add([
+			'name' => 'o:block[__blockIndex__][o:data][title]',
+			'type' => Element\Text::class,
+            'options' => [
+				'label' => 'Title (option)',
+			]
+		]);
 	}
 }

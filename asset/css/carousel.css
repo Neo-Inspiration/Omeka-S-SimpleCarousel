@@ -5,6 +5,7 @@
 .siema {
 	margin: 1rem 0;
 	background-color: #000;
+	position: relative;
 }
 
 .siema-img {
@@ -34,4 +35,19 @@
 .caret#right {
 	right: 20px;
 	transform: rotate(180deg);
+}
+
+#carousel-title {color: #FFF;
+	font-size: 30px;
+	border: 3px solid;
+	padding: 20px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 }
