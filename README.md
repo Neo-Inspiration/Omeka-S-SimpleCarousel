@@ -6,8 +6,8 @@ You can simply place carousel blocks composed of site resource images on a page.
 ## TODO
 - [ ] Block height value validation. (CSS rule)
 - [ ] Adding user configurable CSS setting.
-- [ ] More readable slide button.
-- [ ] Replacing `filter` CSS attribute for IE compatibility
+- [x] More readable slide button.
+- [x] Replacing `filter` CSS attribute for IE compatibility
 
 ## LISENCE
 The module is released under the MIT License.
