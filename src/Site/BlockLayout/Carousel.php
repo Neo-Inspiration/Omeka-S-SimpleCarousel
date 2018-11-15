@@ -50,6 +50,7 @@ class Carousel extends AbstractBlockLayout
 			'o:block[__blockIndex__][o:data][perPage]' => $data['perPage'],
 			'o:block[__blockIndex__][o:data][loop]' => $data['loop'],
 			'o:block[__blockIndex__][o:data][draggable]' => $data['draggable'],
+			'o:block[__blockIndex__][o:data][title]' => $data['title'],
 		]);
 		$form->prepare();
 
