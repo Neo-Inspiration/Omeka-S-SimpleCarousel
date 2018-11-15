@@ -42,11 +42,11 @@
 		let caret_r = '<?php echo $caret_r;?>';
 
 	<?php if ($title !== false): ?>
-		$('.siema').append('<?php echo $title;?>');
+		$('<?php echo $title;?>').insertAfter('.siema');
 	<?php endif ?>
 
-		$('.siema').append(caret);
-		$('.siema').append(caret_r);
+		$(caret).insertAfter('.siema');
+		$(caret_r).insertAfter('.siema');
 
 		$('.caret#left').click(function () {siema.prev()});
 		$('.caret#right').click(function () {siema.next()});
