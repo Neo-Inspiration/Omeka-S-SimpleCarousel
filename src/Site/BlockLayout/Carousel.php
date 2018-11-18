@@ -79,7 +79,7 @@ class Carousel extends AbstractBlockLayout
 				$mediaType = $media->mediaType();
 				$mediaRenderer = $media->renderer();
 				if ((strpos($mediaType, 'image/') !== false) || (strpos($mediaRenderer, 'youtube') !== false)) {
-					array_push($urls, $media->originalUrl());
+					array_push($urls, $media->thumbnailUrl('large'));
 				}
 			}
 		}
