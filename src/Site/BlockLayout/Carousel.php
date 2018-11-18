@@ -53,6 +53,8 @@ class Carousel extends AbstractBlockLayout
 			'o:block[__blockIndex__][o:data][title]' => $data['title'],
 			'o:block[__blockIndex__][o:data][autoSlide]' => $data['autoSlide'],
 			'o:block[__blockIndex__][o:data][autoSlideInt]' => $data['autoSlideInt'],
+			'o:block[__blockIndex__][o:data][wrapStyle]' => $data['wrapStyle'],
+			'o:block[__blockIndex__][o:data][imgStyle]' => $data['imgStyle'],
 		]);
 		$form->prepare();
 
@@ -96,6 +98,8 @@ class Carousel extends AbstractBlockLayout
 			'urls' => $urls,
 			'autoSlide' => $block->dataValue('autoSlide'),
 			'autoSlideInt' => $block->dataValue('autoSlideInt'),
+			'wrapStyle' => $block->dataValue('wrapStyle'),
+			'imgStyle' => $block->dataValue('imgStyle'),
 		]);
 	}
 }

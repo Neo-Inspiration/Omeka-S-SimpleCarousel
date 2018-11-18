@@ -79,5 +79,20 @@ class CarouselBlockForm extends Form
 				'info' => 'Shows next slide every given millisecond.'
 			]
 		]);
+
+		$this->add([
+			'name' => 'o:block[__blockIndex__][o:data][wrapStyle]',
+			'type' => Element\Text::class,
+            'options' => [
+				'label' => 'image wrapper Style',
+			]
+		]);
+		$this->add([
+			'name' => 'o:block[__blockIndex__][o:data][imgStyle]',
+			'type' => Element\Text::class,
+            'options' => [
+				'label' => 'img tag Style',
+			]
+		]);
 	}
 }

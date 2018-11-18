@@ -16,15 +16,19 @@
 	<div class="siema">
 	<?php
 		foreach ($urls as $url) {
-			$html = sprintf('<div><img class="siema-img" src="%s"></div>', $url);
+			$html = sprintf('<div class="siema-wrap" style="%s"><img class="siema-img" style="%s" src="%s"></div>', $wrapStyle, $$imgStyle, $url);
 			echo $html;
 		}
 	?>
 	</div>
 
 	<style>
-		.siema-img {
+		.siema-wrap {
 			height: <?php echo $height ?>;
+		}
+
+		.siema-img {
+			width: 100%;
 		}
 	</style>
 	<script>

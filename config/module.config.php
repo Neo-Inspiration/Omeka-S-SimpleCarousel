@@ -26,7 +26,9 @@ return [
             'draggable' => true,
             'title' => '',
             'autoSlide' => false,
-            'autoSlideInt' => 5000
+            'autoSlideInt' => 5000,
+            'wrapStyle' => 'overflow-y: hidden;display: flex;flex-direction: column;justify-content: center;',
+            'imgStyle' => ''
         ]
     ]
 ];
