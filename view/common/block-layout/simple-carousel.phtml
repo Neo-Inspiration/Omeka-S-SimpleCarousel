@@ -50,6 +50,12 @@
 
 		$('.caret#left').click(function () {siema.prev()});
 		$('.caret#right').click(function () {siema.next()});
+
+	<?php if ($autoSlide == true): ?>
+		window.setInterval(() => {
+			siema.next();
+		}, <?php echo $autoSlideInt; ?>);
+	<?php endif ?>
 	});
 	</script>
 </div>

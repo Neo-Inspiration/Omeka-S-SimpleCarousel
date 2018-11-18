@@ -24,7 +24,9 @@ return [
             'perPage' => 1,
             'loop' => true,
             'draggable' => true,
-            'title' => ''
+            'title' => '',
+            'autoSlide' => false,
+            'autoSlideInt' => 5000
         ]
     ]
 ];

@@ -62,5 +62,22 @@ class CarouselBlockForm extends Form
 				'label' => 'Title (option)',
 			]
 		]);
+
+		$this->add([
+			'name' => 'o:block[__blockIndex__][o:data][autoSlide]',
+			'type' => Element\Checkbox::class,
+            'options' => [
+				'label' => 'Auto Slide',
+			]
+		]);
+
+		$this->add([
+			'name' => 'o:block[__blockIndex__][o:data][autoSlideInt]',
+			'type' => Element\Text::class,
+            'options' => [
+				'label' => 'Slide Interval (milliseconds)',
+				'info' => 'Shows next slide every given millisecond.'
+			]
+		]);
 	}
 }

@@ -51,6 +51,8 @@ class Carousel extends AbstractBlockLayout
 			'o:block[__blockIndex__][o:data][loop]' => $data['loop'],
 			'o:block[__blockIndex__][o:data][draggable]' => $data['draggable'],
 			'o:block[__blockIndex__][o:data][title]' => $data['title'],
+			'o:block[__blockIndex__][o:data][autoSlide]' => $data['autoSlide'],
+			'o:block[__blockIndex__][o:data][autoSlideInt]' => $data['autoSlideInt'],
 		]);
 		$form->prepare();
 
@@ -92,6 +94,8 @@ class Carousel extends AbstractBlockLayout
 			'draggable' => $block->dataValue('draggable'),
 			'title' => $block->dataValue('title'),
 			'urls' => $urls,
+			'autoSlide' => $block->dataValue('autoSlide'),
+			'autoSlideInt' => $block->dataValue('autoSlideInt'),
 		]);
 	}
 }
