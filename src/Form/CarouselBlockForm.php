@@ -94,5 +94,14 @@ class CarouselBlockForm extends Form
 				'label' => 'img tag Style',
 			]
 		]);
+
+		$this->add([
+			'name' => 'o:block[__blockIndex__][o:data][ui_background]',
+			'type' => Element\Text::class,
+			'options' => [
+				'label' => 'siema UI style',
+				'info' => 'Styling #siema-ui including UI element. commonly used for background setup.'
+			]
+		]);
 	}
 }

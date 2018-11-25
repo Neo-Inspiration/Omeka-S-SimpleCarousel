@@ -21,16 +21,12 @@
 		}
 	?>
 	</div>
-	<div class="siema-ui"></div>
+	<div id="siema-ui"></div>
 
 	<style>
-		.siema-wrap {
-			height: <?php echo $height ?>;
-		}
-
-		.siema-img {
-			width: 100%;
-		}
+		.siema-wrap { height: <?php echo $height ?>; }
+		.siema-img { width: 100%; }
+		#siema-ui { background-color: <?php echo $ui_background ?>; }
 	</style>
 	<script>
 	$(document).ready(function() {
@@ -47,11 +43,11 @@
 		let caret_r = '<?php echo $caret_r;?>';
 
 
-		$('.siema-ui').append(caret);
+		$('#siema-ui').append(caret);
 	<?php if ($title !== false): ?>
-		$('.siema-ui').append('<?php echo $title;?>');
+		$('#siema-ui').append('<?php echo $title;?>');
 	<?php endif ?>
-		$('.siema-ui').append(caret_r);
+		$('#siema-ui').append(caret_r);
 
 		$('.caret#left').click(function () {siema.prev()});
 		$('.caret#right').click(function () {siema.next()});

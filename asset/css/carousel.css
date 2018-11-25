@@ -14,7 +14,7 @@
 	margin-right: auto;
 }
 
-.siema-ui {
+#siema-ui {
 	display: flex;
 	justify-content: space-between;
 	position: absolute;

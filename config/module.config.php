@@ -28,7 +28,8 @@ return [
             'autoSlide' => false,
             'autoSlideInt' => 5000,
             'wrapStyle' => 'overflow-y: hidden;display: flex;flex-direction: column;justify-content: center;',
-            'imgStyle' => ''
+            'imgStyle' => '',
+            'ui_background' => 'rgba(0,0,0,0.1)',
         ]
     ]
 ];

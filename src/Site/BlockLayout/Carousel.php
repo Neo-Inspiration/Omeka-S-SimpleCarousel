@@ -55,6 +55,7 @@ class Carousel extends AbstractBlockLayout
 			'o:block[__blockIndex__][o:data][autoSlideInt]' => $data['autoSlideInt'],
 			'o:block[__blockIndex__][o:data][wrapStyle]' => $data['wrapStyle'],
 			'o:block[__blockIndex__][o:data][imgStyle]' => $data['imgStyle'],
+			'o:block[__blockIndex__][o:data][ui_background]' => $data['ui_background'],
 		]);
 		$form->prepare();
 
@@ -100,6 +101,7 @@ class Carousel extends AbstractBlockLayout
 			'autoSlideInt' => $block->dataValue('autoSlideInt'),
 			'wrapStyle' => $block->dataValue('wrapStyle'),
 			'imgStyle' => $block->dataValue('imgStyle'),
+			'ui_background' => $block->dataValue('ui_background'),
 		]);
 	}
 }
