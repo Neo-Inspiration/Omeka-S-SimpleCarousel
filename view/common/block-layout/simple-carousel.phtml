@@ -1,4 +1,4 @@
-<div>
+<div style="position:relative;">
 	<?php
 		$this->headLink()->appendStylesheet($this->assetUrl('css/carousel.css', 'SimpleCarousel'));
 		$this->headScript()->appendFile($this->assetUrl('js/siema.min.js', 'SimpleCarousel'));
@@ -21,6 +21,7 @@
 		}
 	?>
 	</div>
+	<div class="siema-ui"></div>
 
 	<style>
 		.siema-wrap {
@@ -45,12 +46,12 @@
 		let caret = '<?php echo $caret;?>';
 		let caret_r = '<?php echo $caret_r;?>';
 
-	<?php if ($title !== false): ?>
-		$('<?php echo $title;?>').insertAfter('.siema');
-	<?php endif ?>
 
-		$(caret).insertAfter('.siema');
-		$(caret_r).insertAfter('.siema');
+		$('.siema-ui').append(caret);
+	<?php if ($title !== false): ?>
+		$('.siema-ui').append('<?php echo $title;?>');
+	<?php endif ?>
+		$('.siema-ui').append(caret_r);
 
 		$('.caret#left').click(function () {siema.prev()});
 		$('.caret#right').click(function () {siema.next()});
