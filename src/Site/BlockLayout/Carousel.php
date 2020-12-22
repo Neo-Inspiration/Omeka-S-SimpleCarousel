@@ -5,9 +5,9 @@ use Omeka\Api\Representation\SiteRepresentation;
 use Omeka\Api\Representation\SitePageRepresentation;
 use Omeka\Api\Representation\SitePageBlockRepresentation;
 use Omeka\Site\BlockLayout\AbstractBlockLayout;
-use Zend\View\Renderer\PhpRenderer;
+use Laminas\View\Renderer\PhpRenderer;
 
-use Zend\Form\FormElementManager;
+use Laminas\Form\FormElementManager;
 
 use SimpleCarousel\Form\CarouselBlockForm;
 

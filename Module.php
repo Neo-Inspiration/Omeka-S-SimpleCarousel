@@ -2,8 +2,8 @@
 namespace SimpleCarousel;
 
 use Omeka\Module\AbstractModule;
-use Zend\EventManager\SharedEventManagerInterface;
-use Zend\Mvc\MvcEvent;
+use Laminas\EventManager\SharedEventManagerInterface;
+use Laminas\Mvc\MvcEvent;
 
 class Module extends AbstractModule
 {

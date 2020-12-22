@@ -3,7 +3,7 @@ namespace SimpleCarousel\Service\BlockLayout;
 
 use Interop\Container\ContainerInterface;
 use SimpleCarousel\Site\BlockLayout\Carousel;
-use Zend\ServiceManager\Factory\FactoryInterface;
+use Laminas\ServiceManager\Factory\FactoryInterface;
 
 class CarouselFactory implements FactoryInterface
 {
